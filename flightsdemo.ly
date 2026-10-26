@@ -40,17 +40,25 @@
       }
     }
 
-    % Instrument 3: Drums
+    % Instrument 3: French Horn
+    \new Staff \with {
+      midiInstrument = #"flute"
+    } 
+    \relative c' {
+      % Follows the global 4/4 time and 160 BPM tempo
+     r1 r1 r1 r1 eeh'2. eeseh4 deh2 ceh4 deh
+    }
+
+    % Instrument 4: Drums
     \new DrumStaff {
       \drummode {
-        r1\f r1 r1 r1 
-         toml4 toml toml toml toml toml toml toml toml toml toml toml toml toml toml toml
+        r1\f  r1  r1  r1 
+        bd4 bd bd bd bd bd bd bd bd bd bd bd bd bd bd bd  
       }
     }
   >>
-  
   \layout { }
   \midi { }
-      
 }
+
 
